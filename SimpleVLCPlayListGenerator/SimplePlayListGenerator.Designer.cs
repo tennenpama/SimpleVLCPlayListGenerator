@@ -1,6 +1,6 @@
 ﻿namespace SimpleVLCPlayListGenerator
 {
-    partial class Form1
+    partial class SimplePlayListGenerator
     {
         /// <summary>
         /// 必要なデザイナー変数です。
@@ -28,10 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // SimplePlayListGenerator
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(256, 180);
+            this.MaximizeBox = false;
+            this.Name = "SimplePlayListGenerator";
+            this.Text = "SPLG";
+            this.Load += new System.EventHandler(this.SimplePlayListGenerator_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
