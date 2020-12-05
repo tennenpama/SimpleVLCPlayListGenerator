@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
+using System.Configuration;
 
 namespace SimpleVLCPlayListGenerator
 {
@@ -27,7 +28,7 @@ namespace SimpleVLCPlayListGenerator
                                                 new XElement(ns + "location", x))))));
 
             //xmlファイルをxspfとして保存 ( save xml as xspf. )
-            xDoc.Save("playlist.xspf");
+            xDoc.Save(ConfigurationManager.AppSettings["PlayListName"] + ".xspf");
         }
 
         /// <summary>
